@@ -30,7 +30,7 @@ function saveIssue(e){
     //prevent form from submitting
     e.preventDefault();
 }
-//
+//test1
 function setStatusClosed(id) {
     var issues = JSON.parse(localStorage.getItem('issues'));
     for(var j =0; j < issues.length; j++){
