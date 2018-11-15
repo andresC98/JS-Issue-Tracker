@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SENSE</title>
+    <title>JS Issue Tracker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
-  
   <body onload="fetchIssues()">
     <div class="container">
-      <h1>Sensor IssueTracker <small>SENSE</small></h1>
-      <img src="http://ichef.bbci.co.uk/wwfeatures/wm/live/624_351/images/live/p0/2g/hc/p02ghcmr.jpg" class="center">
+      <h1>Sensor IssueTracker <small>by Andres Carrillo</small></h1>
+      
       <div class="jumbotron">
-        
+        <img src="\static\img\sensorerr.jpg" alt="Girl in a jacket"> 
+      </div>
+      <div class="jumbotron">
         <h3>Add New Sensor Issue:</h3>
         <form id="issueInputForm">
           <div class="form-group">
             <label for="issueDescInput">Description</label>
             <input type="text" class="form-control" id="issueDescInput" placeholder="Describe the issue ...">
           </div>
-
           <div class="form-group">
             <label for="issueSeverityInput">Severity</label>
             <select id="issueSeverityInput" class="form-control">
@@ -28,15 +28,6 @@
               <option value="Medium">Medium</option>
               <option value="High">High</option>
             </select>
-          </div>
-          <div class="form-group">
-                <label for="issueTeamInput">Team</label>
-                <select id="issueTeamInput" class="form-control">
-                  <option value="WebDev">WebDev</option>
-                  <option value="Mesonet">Mesonet</option>
-                  <option value="Network/Server">Network/Server</option>
-                  <option value="Analytics">Analytics</option>
-                </select>
           </div>
           <div class="form-group">
             <label for="issueAssignedToInput">Assigned To</label>
